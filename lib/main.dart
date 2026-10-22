@@ -179,7 +179,14 @@ class StudentCard extends StatelessWidget {
                     ),
                   ),
                   const SizedBox(height: 4),
-                  Text(student.course),
+                 // Customization 5: make the course text smaller and softer.
+Text(
+  student.course,
+  style: const TextStyle(
+    fontSize: 14,
+    color: Colors.black54,
+  ),
+),
                   const SizedBox(height: 10),
                   InfoRow(
                     icon: Icons.school,
